@@ -21,7 +21,7 @@ _where `app.css` is your custom CSS file_
     </body>
 </html>
 ```
-2. Linking JavaScript 
+#### Linking JavaScript 
 _where `app.js` is your custom JavaScript file_
 ```html
 <!DOCTYPE html>
@@ -35,7 +35,7 @@ _where `app.js` is your custom JavaScript file_
     </body>
 </html>
 ```
-3. Linking CSS and JavaScript for Bootstrap 
+#### Linking CSS and JavaScript for Bootstrap 
 _where `app.css` and `app.js` are your custom CSS 
 and JavaScript files respectively_
 ```html
