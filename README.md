@@ -7,6 +7,11 @@
 - [Linking JavaScript](#linking-javascript)
 - [Linking CSS and JavaScript for Bootstrap](#linking-css-and-javascript-for-bootstrap)
 
+[JavaScript](#javascript)
+- [Running JavaScript after HTML loads](running-javascript-after-html-loads)
+- [Making API request and process response](making-api-request-and-process-response)
+- [Read values from JavaScript object](read-values-from-javascript-object)
+
 ### HTML
 #### Linking CSS 
 _where `app.css` is your custom CSS file_
@@ -60,4 +65,39 @@ and JavaScript files respectively_
     <script type="text/javascript"  src="app.js"></script>
     </body>
 </html>
+```
+### JavaScript
+#### Running JavaScript after HTML loads
+```javascript
+$( document ).ready(function(){
+    console.log( "ready!")
+});
+```
+#### Making API request and process response
+```javascript
+$.getJSON("https://api.giphy.com/v1/gifs/search?q=dogs&api_key=dc6zaTOxFJmzC", function(response) {
+    console.log(response);
+});
+```
+#### Read values from JavaScript object
+```javascript
+var restaurant = {
+    name: 'Coffee Place',
+    location: 'New York'
+}
+console.log(restaurant.location)
+// 'Coffee Place'
+
+var restaurants = [
+    {
+        name: 'Coffee Place',
+        location: 'New York'
+    },
+    {
+        name: 'Burger Place',
+        location: 'St. Louis'
+    }
+]
+console.log(restaurants[1].location)
+// 'St. Louis'
 ```
