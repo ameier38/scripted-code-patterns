@@ -73,6 +73,29 @@ $( document ).ready(function(){
     console.log( "ready!")
 });
 ```
+#### Get an input element's value with jQuery
+```javascript
+// select <input id="search" />
+var value = $("#search").val();
+```
+#### Changing an element's text with jQuery
+```javascript
+// <p id="result">Hello</p>
+$("#result").text('Hello World')
+// <p id="result">Hello World</p>
+```
+#### Respond to and element click event
+```javascript
+// <div id='box'></div>
+$("#box").click(function(){
+    console.log("Box clicked")
+})
+```
+#### Change element CSS
+```javascript
+// <div id='box'></div>
+$("#box").css("background", "green");
+```
 #### Making API request and process response
 ```javascript
 $.getJSON("https://api.giphy.com/v1/gifs/search?q=dogs&api_key=dc6zaTOxFJmzC", function(response) {
@@ -85,7 +108,7 @@ var restaurant = {
     name: 'Coffee Place',
     location: 'New York'
 }
-console.log(restaurant.location)
+console.log(restaurant.name)
 // 'Coffee Place'
 
 var restaurants = [
@@ -100,4 +123,19 @@ var restaurants = [
 ]
 console.log(restaurants[1].location)
 // 'St. Louis'
+```
+#### For Loop
+```javascript
+for (var i = 0; i <= 5; i++){
+    console.log(i)
+}
+// 1, 2, 3, 4, 5
+```
+#### Loop through an array
+```javascript
+var myArray = ['a', 'b', 'c'];
+for (var i = 0; i < myArray.length; i++){
+    console.log(myArray[i])
+}
+// 'a', 'b', 'c'
 ```
