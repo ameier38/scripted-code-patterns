@@ -22,8 +22,8 @@
 - [For loop](#for-loop)
 - [Loop through an array](#loop-through-an-array)
 
-### HTML
-#### Linking CSS 
+### HTML [TOC](#table-of-contents)
+#### Linking CSS [TOC](#table-of-contents)
 _where `app.css` is your custom CSS file_
 ```html
 <!DOCTYPE html>
@@ -36,7 +36,7 @@ _where `app.css` is your custom CSS file_
     </body>
 </html>
 ```
-#### Linking JavaScript 
+#### Linking JavaScript [TOC](#table-of-contents)
 _where `app.js` is your custom JavaScript file_
 ```html
 <!DOCTYPE html>
@@ -50,7 +50,7 @@ _where `app.js` is your custom JavaScript file_
     </body>
 </html>
 ```
-#### Linking CSS and JavaScript for Bootstrap 
+#### Linking CSS and JavaScript for Bootstrap [TOC](#table-of-contents)
 _where `app.css` and `app.js` are your custom CSS 
 and JavaScript files respectively_
 ```html
@@ -77,8 +77,8 @@ and JavaScript files respectively_
 </html>
 ```
 
-### CSS
-#### Style element by tag
+### CSS [TOC](#table-of-contents)
+#### Style element by tag [TOC](#table-of-contents)
 ```css
 /*  style the body element 
     e.g., <body></body>
@@ -87,7 +87,7 @@ body {
     color: blue;
 }
 ```
-#### Style element by class
+#### Style element by class [TOC](#table-of-contents)
 ```css
 /*  style all elements with 'box' class 
     e.g., <div class='box'></div>
@@ -96,7 +96,7 @@ body {
     border: 3px solid red;
 }
 ```
-#### Style element by id
+#### Style element by id [TOC](#table-of-contents)
 ```css
 /*  style element with id 'result' 
     e.g., <div id='result'></div>
@@ -106,43 +106,43 @@ body {
 }
 ```
 
-### JavaScript
-#### Running JavaScript after HTML loads
+### JavaScript [TOC](#table-of-contents)
+#### Running JavaScript after HTML loads [TOC](#table-of-contents)
 ```javascript
 $( document ).ready(function(){
     console.log( "ready!")
 });
 ```
-#### Get input element value with jQuery
+#### Get input element value with jQuery [TOC](#table-of-contents)
 ```javascript
 // select <input id="search" />
 var value = $("#search").val();
 ```
-#### Changing an element's text with jQuery
+#### Changing an element's text with jQuery [TOC](#table-of-contents)
 ```javascript
 // <p id="result">Hello</p>
 $("#result").text('Hello World')
 // <p id="result">Hello World</p>
 ```
-#### Respond to and element click event
+#### Respond to and element click event [TOC](#table-of-contents)
 ```javascript
 // <div id='box'></div>
 $("#box").click(function(){
     console.log("Box clicked")
 })
 ```
-#### Change element CSS
+#### Change element CSS [TOC](#table-of-contents)
 ```javascript
 // <div id='box'></div>
 $("#box").css("background", "green");
 ```
-#### Making API request and process response
+#### Making API request and process response [TOC](#table-of-contents)
 ```javascript
 $.getJSON("https://api.giphy.com/v1/gifs/search?q=dogs&api_key=dc6zaTOxFJmzC", function(response) {
     console.log(response);
 });
 ```
-#### Read values from JavaScript object
+#### Read values from JavaScript object [TOC](#table-of-contents)
 ```javascript
 var restaurant = {
     name: 'Coffee Place',
@@ -164,14 +164,14 @@ var restaurants = [
 console.log(restaurants[1].location)
 // 'St. Louis'
 ```
-#### For Loop
+#### For Loop [TOC](#table-of-contents)
 ```javascript
 for (var i = 0; i <= 5; i++){
     console.log(i)
 }
 // 1, 2, 3, 4, 5
 ```
-#### Loop through an array
+#### Loop through an array [TOC](#table-of-contents)
 ```javascript
 var myArray = ['a', 'b', 'c'];
 for (var i = 0; i < myArray.length; i++){
