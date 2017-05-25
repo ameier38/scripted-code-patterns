@@ -7,10 +7,20 @@
 - [Linking JavaScript](#linking-javascript)
 - [Linking CSS and JavaScript for Bootstrap](#linking-css-and-javascript-for-bootstrap)
 
+[CSS](#css)
+- [Style element by tag](#style-element-by-tag)
+- [Style element by class](#style-element-by-class)
+- [Style element by id](#style-element-by-id)
+
 [JavaScript](#javascript)
-- [Running JavaScript after HTML loads](running-javascript-after-html-loads)
-- [Making API request and process response](making-api-request-and-process-response)
-- [Read values from JavaScript object](read-values-from-javascript-object)
+- [Running JavaScript after HTML loads](#running-javascript-after-html-loads)
+- [Get input element's value with jQuery](#get-an-input-elements-value-with-jquery)
+- [Respond to an element click event](#respond-to-and-element-click-event)
+- [Change element CSS](#change-element-css)
+- [Making API request and process response](#making-api-request-and-process-response)
+- [Read values from JavaScript object](#read-values-from-javascript-object)
+- [For loop](#for-loop)
+- [Loop through an array](#loop-through-an-array)
 
 ### HTML
 #### Linking CSS 
@@ -66,6 +76,36 @@ and JavaScript files respectively_
     </body>
 </html>
 ```
+
+### CSS
+#### Style element by tag
+```css
+/*  style the body element 
+    e.g., <body></body>
+*/
+body {
+    color: blue;
+}
+```
+#### Style element by class
+```css
+/*  style all elements with 'box' class 
+    e.g., <div class='box'></div>
+*/
+.box {
+    border: 3px solid red;
+}
+```
+#### Style element by id
+```css
+/*  style element with id 'result' 
+    e.g., <div id='result'></div>
+*/
+#result {
+    width: 100%;
+}
+```
+
 ### JavaScript
 #### Running JavaScript after HTML loads
 ```javascript
@@ -73,7 +113,7 @@ $( document ).ready(function(){
     console.log( "ready!")
 });
 ```
-#### Get an input element's value with jQuery
+#### Get input element value with jQuery
 ```javascript
 // select <input id="search" />
 var value = $("#search").val();
